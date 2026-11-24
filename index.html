@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WMC Kurse</title>
-  <meta name="description" content="Kurse zu Web- und Mobile Computing: HTML &amp; CSS, JavaScript, React, Angular, Web Security und Git &amp; GitHub.">
+  <meta name="description" content="Kurse zu Web- und Mobile Computing: HTML &amp; CSS, JavaScript, React, Angular, Web Security, Git &amp; GitHub sowie Java-Grundlagen.">
   <script>(function(){var t='dark';try{t=localStorage.getItem('kurs-theme')||'dark';}catch(e){}document.documentElement.setAttribute('data-theme',t);})();</script>
   <style>
     :root {
@@ -21,6 +21,7 @@
       --angular: #f0475e;
       --sec: #39c5bb;
       --git: #f1502f;
+      --java: #6fa8dc;
       --link: #58a6ff;
     }
     [data-theme="light"] {
@@ -37,6 +38,7 @@
       --angular: #b30023;
       --sec: #0f766e;
       --git: #c2410c;
+      --java: #2f5f82;
       --link: #0969da;
     }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -131,6 +133,7 @@
     .c-angular { --accent: var(--angular); }
     .c-sec { --accent: var(--sec); }
     .c-git { --accent: var(--git); }
+    .c-java { --accent: var(--java); }
     .order {
       background: var(--bg-card);
       border: 1px solid var(--border);
@@ -173,8 +176,9 @@
       <h1>Kurse</h1>
       <p class="lead">
         Sechs Online-Kurse zur Web-Entwicklung &ndash; von den ersten
-        HTML-Seiten bis zu abgesicherten Fullstack-Apps. Jede Lektion mit
-        Theorie, Beispielen und Aufgaben.
+        HTML-Seiten bis zu abgesicherten Fullstack-Apps &ndash; und ein
+        Java-Grundlagenkurs. Jede Lektion mit Theorie, Beispielen und
+        Aufgaben.
       </p>
     </div>
     <button class="theme-toggle" id="theme-toggle"
@@ -229,6 +233,16 @@
         Actions.</p>
       <span class="more">Zum Kurs &rarr;</span>
     </a>
+    <a class="card c-java" href="java_grundlagen/">
+      <h3>Java-Grundlagen</h3>
+      <div class="meta">POS &middot; 34 Lektionen &middot;
+        mit Quiz</div>
+      <p>Klassen und Objekte, Bedingungen, Schleifen, Arrays, Collections,
+        Vererbung, Exceptions, Streams und Design-Patterns bis zur
+        Webanwendung mit Vaadin &ndash; mit dem durchgehenden Projekt
+        Personalverwaltung.</p>
+      <span class="more">Zum Kurs &rarr;</span>
+    </a>
   </div>
 
   <h2>Empfohlene Reihenfolge</h2>
@@ -240,6 +254,8 @@
         JavaScript-Kurs, Teil&nbsp;2 nach dem React-Kurs</li>
       <li><strong>Git &amp; GitHub:</strong> begleitend ab dem
         HTML-&amp;-CSS-Kurs, sp&auml;testens vor dem ersten Teamprojekt</li>
+      <li><strong>Java-Grundlagen:</strong> eigenst&auml;ndig im Fach POS,
+        Teil&nbsp;1&ndash;4 der Reihe nach</li>
     </ul>
   </div>
 
