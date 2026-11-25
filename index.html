@@ -157,7 +157,8 @@
     }
     .extras {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+      grid-template-columns: repeat(auto-fill,
+        minmax(min(100%, 420px), 1fr));
       gap: 1rem;
     }
     .extra:hover, .extra:focus-visible { border-color: var(--link); }
@@ -297,6 +298,15 @@
         <span>Interaktive Tools: Graphen, Aussagenlogik, Syntaxbaum,
           Zahlensysteme.</span>
         <span class="url">theoretische-informatik.at &rarr;</span>
+      </div>
+    </a>
+    <a class="extra" href="https://github.com/hoa-spg/2627">
+      <span class="icon" aria-hidden="true">&#128221;</span>
+      <div>
+        <strong>Unterricht 2026/27</strong>
+        <span>Codes und Beispiele aus dem Unterricht im Schuljahr
+          2026/2027.</span>
+        <span class="url">github.com/hoa-spg/2627 &rarr;</span>
       </div>
     </a>
   </div>
