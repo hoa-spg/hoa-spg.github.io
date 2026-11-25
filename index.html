@@ -155,7 +155,19 @@
       color: inherit;
       text-decoration: none;
     }
-    .extra:hover { border-color: var(--link); }
+    .extras {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+      gap: 1rem;
+    }
+    .extra:hover, .extra:focus-visible { border-color: var(--link); }
+    .extra .url {
+      color: var(--link);
+      font-weight: 600;
+      font-size: 0.85rem;
+      margin-top: 0.3rem;
+      display: block;
+    }
     .extra .icon { font-size: 1.6rem; }
     .extra strong { color: var(--text-primary); display: block; }
     .extra span { color: var(--text-muted); font-size: 0.9rem; }
@@ -259,22 +271,35 @@
     </ul>
   </div>
 
-  <h2>Weitere Unterlagen</h2>
-  <a class="extra" href="https://github.com/hoa-spg/unterlagen">
-    <span class="icon" aria-hidden="true">&#128193;</span>
-    <div>
-      <strong>Unterlagen-Sammlung auf GitHub</strong>
-      <span>Dort findest du diverse weitere Unterlagen, z.&nbsp;B. zu WMC,
-        POS und CABS.</span>
-    </div>
-  </a>
-
-  <footer>
-    Quellcode der Kurse:
-    <a href="https://github.com/hoa-spg">github.com/hoa-spg</a>
-    &middot; Theoretische Informatik:
-    <a href="https://theoretische-informatik.at/">theoretische-informatik.at</a>
-  </footer>
+  <h2>Weitere Unterlagen &amp; Links</h2>
+  <div class="extras">
+    <a class="extra" href="https://theoretische-informatik.at/">
+      <span class="icon" aria-hidden="true">&#129504;</span>
+      <div>
+        <strong>Theoretische Informatik</strong>
+        <span>Interaktive Tools: Graphen, Aussagenlogik, Syntaxbaum,
+          Zahlensysteme.</span>
+        <span class="url">theoretische-informatik.at &rarr;</span>
+      </div>
+    </a>
+    <a class="extra" href="https://github.com/hoa-spg/unterlagen">
+      <span class="icon" aria-hidden="true">&#128193;</span>
+      <div>
+        <strong>Unterlagen-Sammlung auf GitHub</strong>
+        <span>Diverse weitere Unterlagen, z.&nbsp;B. zu WMC, POS und
+          CABS.</span>
+        <span class="url">github.com/hoa-spg/unterlagen &rarr;</span>
+      </div>
+    </a>
+    <a class="extra" href="https://github.com/hoa-spg">
+      <span class="icon" aria-hidden="true">&#128187;</span>
+      <div>
+        <strong>Quellcode der Kurse</strong>
+        <span>Alle Kurse als Repositories auf GitHub.</span>
+        <span class="url">github.com/hoa-spg &rarr;</span>
+      </div>
+    </a>
+  </div>
 </div>
 <script>
   (function () {
